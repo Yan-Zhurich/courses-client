@@ -1,0 +1,19 @@
+<section class = "login-form" >
+    <section class = "form-block" @exists>
+      <button class = "close-form" (click) = "onClose()"></button>
+      <figure class = "form-header">
+        <img class = "form-header__image" src="assets/img/login.png" alt="Log In">
+        <figcaption class = "form-header__capture">Log In</figcaption>    
+      </figure>
+      <form [formGroup] = "credentials">
+        <label class = "label">Login</label>
+        <input formControlName = "login" class = "input-text login-input"/>
+        <label class = "label">Password</label>
+        <input formControlName = "password" class = "input-text password-input" type="password"/>
+        <section class = "controls">            
+            <button (click) = "onSignUp()" class = "button action-button">Sign Up</button>
+            <button (click) = "onLogIn()" class = "button confirm-button">Log In</button>
+        </section>
+      </form>      
+    </section>
+  </section>

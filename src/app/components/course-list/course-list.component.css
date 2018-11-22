@@ -1,0 +1,45 @@
+.course-list{
+    max-width:1200px;
+    margin:auto;
+}
+.navigation{
+    display:flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search__field{
+    height: 50px;
+    width: 500px;
+    border: 1px solid #c6c6c6;
+    color:#c6c6c6;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.add-course {
+    margin-right: 10px;
+}
+.load-more{
+    background-color:#A4CBFA;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border:none;
+    font-size: 17px;
+    margin-bottom: 70px;
+    border-radius: 8px;
+}
+.load-more:hover{
+    background-color: #549AED;
+    transition: 200ms;
+    cursor: pointer;
+    border:none;
+}

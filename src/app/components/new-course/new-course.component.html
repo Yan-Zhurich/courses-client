@@ -1,0 +1,22 @@
+<section class = "new-course" @exists>
+  <section class = "form-block">
+    <figure class = "form-header">
+      <img class = "form-header__image" src="assets/img/course-item-list/add-new-course.png" alt="Adding new course">
+      <figcaption class = "form-header__capture">Adding new course</figcaption>    
+    </figure>
+    <form [formGroup] = "course">
+      <label class = "label">Title</label>
+      <input formControlName = "title" class = "title-input input-text"/>
+      <label class = "label">Description</label>
+      <textarea formControlName = "description" class = "description-input"></textarea>
+      <label class = "label">Date</label>
+      <input formControlName = "date" type = "date" class = "date-input"/>
+      <label class = "label">Duration</label>
+      <input formControlName = "duration" class = "duration-input"/>
+      <section class = "controls">
+          <button (click) = "onSave()" class = "button confirm-button">Save</button>
+          <button (click) = "onCancel()" class = "button cancel-button">Cancel</button>
+      </section>
+    </form>
+  </section>
+</section>

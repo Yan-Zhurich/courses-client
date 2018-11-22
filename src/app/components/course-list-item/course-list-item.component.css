@@ -1,0 +1,90 @@
+.course{
+    display:flex;
+    box-shadow: 3px 3px 5px -1px rgb(185, 185, 185);
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    border-radius: 8px;
+    transition: 200ms;
+}
+.course:hover{
+    background-color:#fcf7e3;
+    cursor: pointer;
+}
+.header-and-description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.description {
+    color: grey;
+    flex-grow: 1;
+    text-indent: 40px;
+    line-height: 1.4;
+    max-height: 115px;
+    min-height: 115px;
+    overflow: hidden;
+    margin: 0;
+}
+.header__text{
+    margin: 0;
+    font-size: 20px;
+    color: rgb(99, 99, 99);
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-meta{
+    display: flex;
+    align-items: center;
+}
+.status-icons{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.status-icons__item{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.status-icons__image{
+    width: 40px;
+}
+.duration-and-date{
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.delete{
+    margin-top: 5px;
+}
+.course__image{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    outline: 1px solid rgb(218, 218, 218);
+    min-width: 300px;
+    justify-content: space-around;
+    background: white;
+}
+.image{
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+    width: 100px;
+}
+.date{
+    margin-left:10px;
+}

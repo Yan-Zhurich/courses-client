@@ -1,0 +1,12 @@
+<section class="message" [appMessageSeverity]="message.severity" @exists>
+  <section class="message-block">
+      <section class ="image-and-header">
+        <figure class= "image-wrapper">
+            <img src="assets/img/warning.png" class="message-severity-image" alt="warning">                 
+        </figure>        
+        <article class = "header">{{message?.header}}</article>
+      </section>
+      <article class="message-text">{{message.text}}</article>
+      <button (click)="onClose()" class="button">Close</button>  
+  </section>
+</section>

@@ -1,0 +1,23 @@
+<section class="course">
+    <figure class="course__image">
+        <img src="assets/img/course-item-list/course.png" class="image">
+    </figure>
+    <section class="header-and-description">
+        <section class="header">
+            <h4 class="header__text">{{course.title | uppercase}}</h4>
+            <section class="course-meta">
+                <section class="status-icons" [appFreshCourse]="course.creationDate" [views]="course.views">                    
+                </section>
+                <section class="duration-and-date">
+                    <p class="duration">{{course.duration | durationPipe}}</p>
+                    <p class="date">{{ course.creationDate | date }}</p>
+                 </section>
+            </section>                                     
+        </section>
+        <p class="description">{{course.description}}</p>
+    </section>
+    <section class="controls">
+        <button class="action-button">Edit</button>
+        <button class="cancel-button delete" (click)='onDelete()'>Delete</button>
+    </section>
+  </section>

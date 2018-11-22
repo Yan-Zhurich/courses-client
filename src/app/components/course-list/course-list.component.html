@@ -1,0 +1,12 @@
+<section class="course-list">
+  <section class="navigation">
+    <form class ="search">
+      <input type="text" class="search__field" [(ngModel)] = "searchFieldText" name="search__field">
+      <button class="action-button" (click) = "onSearch()">Search</button>
+    </form>
+    <button class="add-course action-button" (click)="onAdd()">Add course</button>
+  </section>
+  <app-course-list-item *ngFor="let course of courses" [course] = "course" (delete) = 'onDelete($event)'></app-course-list-item>
+  <button class="load-more" (click)='onLoadMore()'>Load more</button>
+  <template #addcourse></template>
+</section>

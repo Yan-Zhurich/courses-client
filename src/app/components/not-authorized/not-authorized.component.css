@@ -1,0 +1,38 @@
+.not-authorized{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin-top: 80px;
+}
+.lock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.lock__img {
+    width: 230px;
+    margin-top: 50px;
+    opacity: 0.5;
+}
+.lock__caption {
+    color: rgb(175, 175, 175);
+    font-size: 45px;
+    margin-top: 20px;
+}
+.advice {
+    color: rgb(97, 97, 97);
+    font-size: 22px;
+    margin: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+.advice__link {
+    color: #79B1F5;
+    opacity: 0.5;
+}
+.advice__link:hover {
+    opacity: 1;
+    transition: 0.3s;
+}

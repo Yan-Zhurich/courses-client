@@ -1,0 +1,79 @@
+*:focus{
+    outline: none;
+}
+body {
+    margin: 0;
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(247, 247, 247);
+    
+}
+.action-button, .cancel-button, .confirm-button {
+    width: 100px;
+    border: 1px solid #c6c6c6;
+    color:gray;
+    font-size: 17px;
+    background-color: transparent;
+    height: 53px;
+    border-radius: 7px;
+    
+}
+/* green color button */
+.confirm-button:hover {
+    color:white;
+    background-color: #08e2ab;
+    cursor: pointer;
+    transition: 200ms;
+}
+/* red color button */
+.cancel-button:hover {
+    color:white;
+    background-color: #f15860;
+    cursor: pointer;
+    transition: 200ms;
+}
+/* orange color button */
+.action-button:hover {
+    color:white;
+    background-color: #FFE672;
+    cursor: pointer;
+    transition: 200ms;
+}
+.input-text {
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: 10px 7px;
+    font: 1.5em sans-serif;
+    color: rgb(105, 105, 105);
+    height: 30px;
+    border: 1px solid #cacaca;
+    box-shadow: 3px 3px 5px -1px rgb(185, 185, 185);
+    padding-left: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    border-radius: 7px;
+    display: flex;
+}
+/* cross-button at the top right of the forms*/
+.close-form{
+    align-self: flex-end;
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    background-image: url(/assets/img/close.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+}
+.close-form:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 1;
+    /* background-size: 40 */
+}

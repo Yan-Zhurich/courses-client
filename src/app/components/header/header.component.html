@@ -1,0 +1,11 @@
+<header class="header">
+  <figure class="header-logo">
+    <img class="header-logo__image" src="assets/img/logo.png" alt="Videocourses">
+    <figcaption class="header-logo__capture">Videocourses</figcaption>
+  </figure>
+  <section class="user-data">
+    <p class="user-data__username">{{userFirstName}}</p>
+    <button *ngIf="isLoggedIn" class="user-data__logout" (click) = "onLogOut()">Log Out</button>
+    <button *ngIf="!isLoggedIn" class="user-data__logout" (click) = "onLogIn()">Log In</button>
+  </section>
+</header>
