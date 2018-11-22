@@ -1,4 +1,4 @@
-# Videocourses
+# Videocourses Client
 
 Angular-written client for Videocourses petproject
 
